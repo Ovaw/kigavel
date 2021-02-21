@@ -1,0 +1,8 @@
+#locations {
+    background-color: rgb(221, 221, 221);
+
+    height: 380px;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
