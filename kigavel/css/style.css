@@ -1,0 +1,27 @@
+#locations {
+    background-color: rgb(221, 221, 221);
+
+    height: 380px;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* 追加ボタンの書式設定 */
+.addition {
+    display: flex;
+    margin: 10px auto;
+}
+
+/* 削除ボタンの書式設定 */
+.deletion {
+    flex-direction: row;
+    width: 5%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* クリックしたボタンを非表示にし、擬似的に削除した風にする */
+.hidden {
+    display: none;
+}
