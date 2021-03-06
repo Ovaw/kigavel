@@ -1,3 +1,11 @@
+<?php 
+    // 参考: https://teratail.com/questions/76080
+    function h($str)
+    {
+        return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,6 +20,11 @@
     <h2>目的地を選ぶ</h2>
 
     <a href="date.php">戻る</a>
+    <div>
+        出発日: <?php echo h(filter_input(INPUT_POST, 'departure')); ?>
+        <br>
+        帰着日: <?php echo h(filter_input(INPUT_POST, 'return')); ?>
+    </div>
 
     <div>
         検索

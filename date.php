@@ -11,16 +11,17 @@
     <h2>日程を選ぶ</h2>
     <a href="index.php">戻る</a>
 
-    <p>
-        出発日
-        <input type="date" name="departure" id="departure">
-
-        帰着日
-        <input type="date" name="return" id="return">
-
-        <br>
-        <a href="location.php">次へ</a>
-    </p>
+    <div>
+        <form action="location.php" method = "post">
+            出発日
+            <input type="date" name="departure" id="departure">
+            <br>
+            帰着日
+            <input type="date" name="return" id="return">
+            <br>
+            <input type="submit" value="次へ">
+        </form>
+    </div>
 
     <p>
         <a href="index.php">トップへ戻る</a>
